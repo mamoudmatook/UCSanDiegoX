@@ -10,7 +10,7 @@ long long get_fibonacci_huge_naive(long long n, long long m) {
         long long tmp_previous = previous;
         previous = current;
         current = (tmp_previous + current)%m;
-	cout << current<<" "<<endl;
+//	cout << current<<" "<<endl;
     if(i !=1 && current==1 && previous==0)
      {
 	     period=(i+1);
@@ -18,7 +18,7 @@ long long get_fibonacci_huge_naive(long long n, long long m) {
       
     }
     }
-    cout << period <<endl;
+   // cout << period <<endl;
     if(period !=0)
 
    n=n%period;
